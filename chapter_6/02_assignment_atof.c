@@ -1,13 +1,18 @@
 #include<stdio.h>
+#include <float.h>
 
 double atof(char s[]);
 
 int main() {
-    printf("Num: %f", atof(" 10.23"));
+    printf("Num: %.30lf", atof(" -10.25"));
+
+    double test = 1.0 / 3;
+    printf("Num: %.30lf", test);
+
 }
 
 double atof(char s[]) {
-    int i, sign, exponent_sign, power, exponent_power; 
+    int i, sign, exponent_sign, power, exponent_power;
     double val, multiplier;
 
     for(i = 0; s[i] == ' ' || s[i] == '\t' || s[i] == '\n'; i++);
