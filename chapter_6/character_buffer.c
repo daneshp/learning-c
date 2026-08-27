@@ -2,8 +2,8 @@
 
 #define BUFFER_SIZE 100
 
-int buffer[BUFFER_SIZE];
-int i = 0;
+static int buffer[BUFFER_SIZE];
+static int i = 0;
 
 int getch() {
     // buffer is empty

@@ -1,8 +1,8 @@
 #include <stdio.h>
 #define MAX_DEPTH 100
 
-int sp = 0;
-double s[MAX_DEPTH];
+static int sp = 0;
+static double s[MAX_DEPTH];
 
 int push(double number) {
     if(sp < MAX_DEPTH) {
